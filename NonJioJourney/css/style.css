@@ -1,0 +1,288 @@
+@font-face {
+    font-family: ThunderFont;
+    src: url('../font/FuturaStd-CondensedExtraBd.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ThunderFont';
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .nonjioMobile {
+        background-image: url('../assets/mobile/Mobile-BG.png');
+        width: 100%;
+        background-size: 100%;
+        position: absolute;
+        height: 100%;
+    }
+    .mobileJioLogo {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .mobileJioLogo img {
+        width: 18%;
+    }
+    .nonJioJurneyFooter {
+        position: absolute;
+        bottom: 0;
+    }
+    .nonJioJurneyFooter img {
+        width: 100%;
+    }
+    .jurneyForm {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 47%;
+    }
+    .jurneyForm p {
+        font-size: 20px;
+        border-bottom: 1px solid #ffffff;
+        margin: 0;
+        color: #ffffff;
+    }
+    #mobileNumber {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        font-family: ThunderFont;
+        font-size: 20px;
+        border-bottom: 1px solid #ffffff;
+        height: 25px;
+        margin-left: 5px;
+        padding-bottom: 0;
+        width: 70%
+    }
+    .submitBtn {
+        background-color: #ffffff;
+        width: 65%;
+        height: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: ThunderFont;
+        font-size: 20px;
+        color: #0e3178;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 59%;
+    }
+    #mondatoryText {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 65%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 13px;
+        padding-top: 3px;
+    }
+    .headertext {
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        width: 72%;
+        margin: 0 auto;
+    }
+    #EnterDesktopDiv {
+        display: none;
+    }
+    #EnterMobileDiv {
+        display: block;
+    }
+    .mainPopup {
+        width: 100%;
+        height: 100vh;
+        background-color: #000000e3;
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        z-index: 100000000;
+    }
+    .PopUp {
+        width: 85%;
+        background-color: #ffffff;
+        position: relative
+    }
+    .PopUp p {
+        text-align: center;
+        color: #0e3178;
+    }
+    #popUpClose {
+        cursor: pointer;
+        width: 5%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .popUpLogo {
+        text-align: center;
+        margin-top: 13px;
+    }
+    .popUpLogo img {
+        width: 22%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #EnterMobileDiv {
+        display: none;
+    }
+    #EnterDesktopDiv {
+        background-image: url('../assets/desktop/Desktop-BG.png');
+        width: 100%;
+        background-size: 100% 100%;
+        position: absolute;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .desktopJioLogo {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .desktopJioLogo img {
+        width: 10%;
+    }
+    .nonJioJurneyFooter {
+        position: absolute;
+        bottom: 0;
+    }
+    .nonJioJurneyFooter img {
+        width: 100%;
+    }
+    .jurneyForm {
+        width: 27%;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+        top: 54%;
+    }
+    .jurneyForm p {
+        font-size: 20px;
+        border-bottom: 1px solid #ffffff;
+        margin: 0;
+        color: #ffffff;
+    }
+    #mobileNumber {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        font-family: ThunderFont;
+        font-size: 20px;
+        border-bottom: 1px solid #ffffff;
+        height: 25px;
+        margin-left: 5px;
+        padding-bottom: 0;
+        width: 70%
+    }
+    .submitBtn {
+        background-color: #ffffff;
+        width: 20%;
+        height: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: ThunderFont;
+        font-size: 20px;
+        color: #0e3178;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 66%;
+        z-index: 10000001;
+    }
+    #mondatoryText {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    .headertext {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        width: 26%;
+        margin: 0 auto
+    }
+    .mainPopup {
+        width: 100%;
+        height: 100vh;
+        background-color: #000000e3;
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        z-index: 100000000;
+    }
+    .PopUp {
+        width: 48%;
+        background-color: #ffffff;
+        position: relative;
+    }
+    .PopUp p {
+        text-align: center;
+        color: #0e3178;
+        /* width: 34%; */
+        font-size: 23px;
+    }
+    #popUpClose {
+        cursor: pointer;
+        width: 3.5%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .popUpLogo {
+        text-align: center;
+        margin-top: 13px;
+    }
+    .popUpLogo img {
+        width: 22%;
+    }
+    .maindivpopupTxt {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
